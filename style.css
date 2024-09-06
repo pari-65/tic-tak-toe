@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 350%;
+    margin: 20px 0;
+    margin-top: 30%;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+    max-width: 320px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center;
+    background-color: #111;
+    border: 2px solid #0ff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    font-size: 3em;
+    color: #0ff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding-top: 10px; /* Space from the top */
+}
+
+.cell:hover {
+    background-color: #222;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 1);
+}
+
+.cell.X {
+    font-size: 500%;
+    color: rgb(44, 28, 212);
+    text-shadow: 0 0 10px rgba(0, 38, 255, 0.7);
+}
+
+.cell.O {
+    font-size: 500%;
+    color: #f0f;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #0ff;
+    color: #222;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0cc;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 1);
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
